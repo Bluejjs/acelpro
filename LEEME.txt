@@ -1,0 +1,10 @@
+Esta carpeta es para tus imágenes reales:
+
+- og-image.jpg  → 1200x630px. Se muestra al compartir el link en WhatsApp,
+                   Facebook, LinkedIn, etc. (fachada del taller o logo).
+- favicon.png / favicon.ico → ícono de la pestaña del navegador.
+- Fotos del taller que quieras usar más adelante en la página.
+
+Por ahora el sitio usa un favicon generado por código (sin archivo) y no
+tiene og-image real todavía — agrégala aquí y actualiza las rutas en
+index.html (busca "og-image.jpg" y "assets/og-image.jpg").

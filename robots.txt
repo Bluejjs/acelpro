@@ -1,0 +1,8 @@
+# robots.txt — AcelPro
+# Permite el rastreo completo del sitio a todos los motores de búsqueda.
+
+User-agent: *
+Allow: /
+
+# Reemplaza por tu dominio real una vez publicado el sitio.
+Sitemap: https://www.acelpro.cl/sitemap.xml
