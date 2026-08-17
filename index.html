@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEGURIDAD ===== -->
+<!-- Content-Security-Policy: limita de qué orígenes puede cargar el sitio
+     scripts, estilos, fuentes e iframes. Ajusta esta lista si agregas
+     nuevos servicios externos (ej. Google Analytics, otro mapa, etc). -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src https://fonts.gstatic.com;
+  img-src 'self' data: https:;
+  frame-src https://www.google.com;
+  script-src 'self' 'unsafe-inline';
+  connect-src 'self';
+  base-uri 'self';
+  form-action 'self' https://wa.me;
+  object-src 'none';
+  frame-ancestors 'self';
+">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+<!-- ===== SEO BÁSICO ===== -->
+<title>AcelPro | Taller Mecánico y Servicio Automotriz en La Florida, Santiago</title>
+<meta name="description" content="AcelPro es un taller mecánico y servicio automotriz en La Florida, Santiago. Mecánica diésel y gasolina, diagnóstico computarizado, mantención, suspensión, tren delantero y trasero. Agenda tu hora.">
+<meta name="keywords" content="taller mecánico, taller mecánico La Florida, servicio automotriz, servicio automotriz La Florida, mecánica automotriz, mecánico automotriz Santiago, mecánica diésel, mecánica gasolina, mantención automotriz, reparación de vehículos, diagnóstico automotriz, diagnóstico computarizado, tren delantero, tren trasero, suspensión, alineación y balanceo, reparación de motores">
+<meta name="robots" content="index, follow">
+<meta name="author" content="AcelPro">
+<meta name="theme-color" content="#08111b">
+<meta name="category" content="Servicio automotriz y taller mecánico">
+<meta name="subject" content="Taller mecánico y mecánica automotriz en La Florida, Santiago">
+<meta name="geo.region" content="CL-RM">
+<meta name="geo.placename" content="La Florida, Santiago">
+<meta name="geo.position" content="-33.5617;-70.5718">
+<meta name="ICBM" content="-33.5617, -70.5718">
+
+<!-- Reemplaza esta URL por el dominio real una vez publicada la página -->
+<link rel="canonical" href="https://www.acelpro.cl/">
+
+<!-- ===== OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ===== -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="AcelPro">
+<meta property="og:title" content="AcelPro | Taller Mecánico Diésel, Gasolina y Suspensión en La Florida">
+<meta property="og:description" content="Diagnóstico computarizado, reparación de tren delantero y trasero, y garantía en repuestos y mano de obra. Agenda tu hora por WhatsApp.">
+<meta property="og:url" content="https://www.acelpro.cl/">
+<!-- Reemplaza por una imagen real de 1200x630px (taller, fachada o logo) subida a tu hosting -->
+<meta property="og:image" content="https://www.acelpro.cl/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- ===== TWITTER CARD ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AcelPro | Taller Mecánico Diésel, Gasolina y Suspensión">
+<meta name="twitter:description" content="Mecánica de precisión en La Florida, Santiago. Diagnóstico computarizado y garantía en cada trabajo.">
+<meta name="twitter:image" content="https://www.acelpro.cl/assets/og-image.jpg">
+
+<!-- ===== FAVICON ===== -->
+<!-- Sustituye por tus propios archivos de ícono cuando tengas el logo final -->
+<link rel="icon" type="image/png" href="assets/acelpro-icon-square.png">
+<link rel="apple-touch-icon" href="assets/acelpro-icon-square.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- ===== DATOS ESTRUCTURADOS (Schema.org) para Google / Google Maps ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "AcelPro",
+  "image": "https://www.acelpro.cl/assets/acelpro-icon-square.png",
+  "@id": "https://www.acelpro.cl/",
+  "url": "https://www.acelpro.cl/",
+  "telephone": "+56984149003",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Diego Portales 1167",
+    "addressLocality": "La Florida",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -33.5617,
+    "longitude": -70.5718
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+   "serviceType": [
+    "Servicio automotriz",
+    "Taller mecánico",
+    "Mecánica automotriz",
+    "Mecánica diésel",
+    "Mecánica gasolina",
+    "Mantención automotriz",
+    "Diagnóstico automotriz"
+  ],
+  "areaServed": [
+    { "@type": "City", "name": "La Florida" },
+    { "@type": "City", "name": "Santiago" }
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación y mantención de motores diésel" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación y mantención de motores a gasolina" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de tren delantero" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de tren trasero" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Servicio automotriz y mantención preventiva" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico automotriz computarizado" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación y mantención de suspensión" } }
+  ],
+  "sameAs": [
+    "https://wa.me/56984149003"
+  ]
+}
+</script>
+
+<!-- ===== DATOS ESTRUCTURADOS: Preguntas Frecuentes (deben coincidir con el texto visible en #faq) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia a AcelPro de un taller mecánico genérico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos enfocamos solo en cuatro sistemas: motores diésel, motores a gasolina, tren delantero y tren trasero. Al no intentar cubrir todo, nuestros mecánicos dominan a fondo estas áreas, en vez de hacer un poco de todo sin especialización."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajan con vehículos diésel y a gasolina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Contamos con diagnóstico y mantención especializada para ambos tipos de motor, incluyendo sistemas de inyección, turbos, afinamiento y escáner multimarca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cada cuánto debo llevar mi auto a mantención?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Como referencia general, se recomienda una revisión cada 10.000 a 15.000 km o cada 6 meses, lo que ocurra primero. En tu diagnóstico te damos una recomendación específica según la marca, modelo y uso de tu vehículo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto demora una revisión de tren delantero o trasero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de la falla. Un diagnóstico inicial suele tomar entre 30 y 60 minutos; la reparación completa (amortiguadores, bujes, rodamientos, etc.) se agenda según la disponibilidad de repuestos, y siempre te damos un plazo estimado antes de empezar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Entregan garantía por el servicio automotriz realizado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, todos nuestros trabajos incluyen garantía en repuestos y mano de obra. Los términos específicos se detallan en tu presupuesto antes de aceptar el servicio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito agendar hora o puedo llegar directo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recomendamos agendar por WhatsApp o el formulario de esta página para asegurar tu horario, aunque también recibimos vehículos según disponibilidad del taller."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header>
+  <div class="container nav">
+    <div class="brand-wrap">
+      <a href="#top" class="brand" aria-label="AcelPro - Taller mecánico y servicio automotriz">
+        <img class="brand-icon" src="assets/acelpro-icon.png" alt="" loading="eager" decoding="async" aria-hidden="true">
+        <span class="brand-text">ACEL<em>PRO</em><small>Mecánica automotriz</small></span>
+      </a>
+      <a class="header-location" href="https://www.google.com/maps/search/?api=1&query=Av.%20Diego%20Portales%201167%2C%20La%20Florida%2C%20Santiago" target="_blank" rel="noopener noreferrer" aria-label="Ver ubicación de AcelPro en Google Maps">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true">
+          <path d="M20 10.5c0 5-8 11-8 11s-8-6-8-11a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="12" cy="10.5" r="2.6" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span>AV. Diego Portales 1167, La Florida</span>
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#porque">Por qué elegirnos</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="nav-links-cta">Agendar diagnóstico</a>
+    </nav>
+    <a class="nav-cta" href="#contacto">Agendar diagnóstico</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg class="icon-burger" viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="hero hero-full" id="top">
+  <img src="assets/distribucion-motor.jpg" alt="Sistema de distribución del motor" class="distribution-image hero-background-image">
+  <div class="hero-background-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <div class="hero-eyebrow eyebrow">TALLER MECÁNICO · SERVICIO AUTOMOTRIZ</div>
+      <h1>Mecánica de <span class="mark">precisión</span> para motores diésel y gasolina en La Florida</h1>
+      <p class="lead">Servicio automotriz integral: diagnóstico computarizado, mantención y reparación de motores diésel y gasolina, tren delantero, tren trasero y suspensión. Atención profesional y transparente en La Florida, Santiago.</p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">
+          Agendar diagnóstico
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://wa.me/56984149003?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20una%20revisi%C3%B3n%20para%20mi%20veh%C3%ADculo" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.5 6.3 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-2 0-3.9-.5-5.5-1.5l-.4-.2-4.6 1.1 1.2-4.4-.3-.4C5.3 17.7 4.7 16.4 4.7 15c0-6.2 5.1-11.3 11.3-11.3S27.3 8.8 27.3 15 22.2 24.8 16 24.8zm6.2-8.4c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.4z"/></svg>
+          WhatsApp directo
+        </a>
+      </div>
+      <div class="hero-phone">
+        <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6"/></svg>
+        Llámanos o escríbenos: <strong>+56&nbsp;9&nbsp;8414&nbsp;9003</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trustbar">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item" data-reveal="fade" style="--reveal-delay:0s">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Garantía en repuestos y mano de obra</span>
+      </div>
+      <div class="trust-item" data-reveal="fade" style="--reveal-delay:.08s">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="m6 12 3-3 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Diagnóstico computarizado</span>
+      </div>
+      <div class="trust-item" data-reveal="fade" style="--reveal-delay:.16s">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c1.2-3.5 4-5.2 7-5.2s5.8 1.7 7 5.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>Mecánicos certificados</span>
+      </div>
+      <div class="trust-item" data-reveal="fade" style="--reveal-delay:.24s">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Atención rápida</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="servicios">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">ÁREAS DE ESPECIALIZACIÓN</div>
+      <h2>Un taller, cuatro sistemas dominados a fondo</h2>
+      <p>Servicio automotriz integral para vehículos diésel y gasolina en La Florida. Mecánica, mantención y reparación con diagnóstico profesional y atención transparente.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="svc-card bracket-frame" data-reveal="scale" style="--reveal-delay:0s">
+        <span class="bf-tr"></span><span class="bf-br"></span>
+        <div class="svc-code">SIS-01 / DIÉSEL</div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 21V9l5-5 5 5v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 21v-6h4v6" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="17.5" r="2.2" stroke="currentColor" stroke-width="1.7"/></svg>
+        </div>
+        <h3>Motores diésel</h3>
+        <ul>
+          <li>Diagnóstico electrónico especializado</li>
+          <li>Sistema de inyección</li>
+          <li>Revisión y reparación de turbos</li>
+          <li>Mantenciones preventivas y correctivas</li>
+        </ul>
+      </div>
+
+      <div class="svc-card bracket-frame" data-reveal="scale" style="--reveal-delay:.08s">
+        <span class="bf-tr"></span><span class="bf-br"></span>
+        <div class="svc-code">SIS-02 / GASOLINA</div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 21V9l6-3 6 3v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M16 12h1.5a2 2 0 0 1 2 2v4.5a1.5 1.5 0 0 1-3 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 12h6M7 16h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Motores gasolina</h3>
+        <ul>
+          <li>Ajuste y afinamiento de motor</li>
+          <li>Revisión de emisión y anomalías</li>
+          <li>Escáner multimarca de diagnóstico</li>
+          <li>Mantención preventiva completa</li>
+        </ul>
+      </div>
+
+      <div class="svc-card bracket-frame" data-reveal="scale" style="--reveal-delay:.16s">
+        <span class="bf-tr"></span><span class="bf-br"></span>
+        <div class="svc-code">SIS-03 / DELANTERO</div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Tren delantero</h3>
+        <ul>
+          <li>Amortiguadores y bujes</li>
+          <li>Homocinéticas</li>
+          <li>Sistema de dirección</li>
+          <li>Alineación y balanceo</li>
+        </ul>
+      </div>
+
+      <div class="svc-card bracket-frame" data-reveal="scale" style="--reveal-delay:.24s">
+        <span class="bf-tr"></span><span class="bf-br"></span>
+        <div class="svc-code">SIS-04 / TRASERO</div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Tren trasero</h3>
+        <ul>
+          <li>Rodamientos y ejes</li>
+          <li>Suspensión trasera</li>
+          <li>Frenos traseros</li>
+          <li>Amortiguación</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="why section-pad" id="porque">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">POR QUÉ ELEGIRNOS</div>
+      <h2>Lo que hace la diferencia cuando dejas tu auto con nosotros</h2>
+      <p>Tres compromisos que cumplimos en cada vehículo que entra al taller.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item" data-reveal="left" style="--reveal-delay:0s">
+        <div class="why-stat">0 sorpresas</div>
+        <h3>Transparencia en presupuestos</h3>
+        <p>Te mostramos el diagnóstico y el costo antes de tocar el vehículo. Lo que se cotiza es lo que se cobra.</p>
+      </div>
+      <div class="why-item" data-reveal="fade" style="--reveal-delay:.1s">
+        <div class="why-stat">100% original</div>
+        <h3>Repuestos de alta durabilidad</h3>
+        <p>Trabajamos con repuestos de calidad original o equivalente certificado, nunca alternativas de dudosa procedencia.</p>
+      </div>
+      <div class="why-item" data-reveal="right" style="--reveal-delay:.2s">
+        <div class="why-stat">Plazo cumplido</div>
+        <h3>Entrega en el tiempo acordado</h3>
+        <p>Te damos una fecha de entrega realista y la cumplimos, con comunicación constante durante el proceso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section-pad faq" id="faq">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">PREGUNTAS FRECUENTES</div>
+      <h2>Todo lo que preguntan antes de agendar</h2>
+      <p>Dudas comunes sobre nuestro servicio automotriz y mecánica especializada.</p>
+    </div>
+
+    <div class="faq-list" data-reveal="fade">
+      <details class="faq-item" open>
+        <summary>¿Qué diferencia a AcelPro de un taller mecánico genérico?</summary>
+        <p>Nos enfocamos solo en cuatro sistemas: motores diésel, motores a gasolina, tren delantero y tren trasero. Al no intentar cubrir todo, nuestros mecánicos dominan a fondo estas áreas, en vez de hacer un poco de todo sin especialización.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Trabajan con vehículos diésel y a gasolina?</summary>
+        <p>Sí. Contamos con diagnóstico y mantención especializada para ambos tipos de motor, incluyendo sistemas de inyección, turbos, afinamiento y escáner multimarca.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cada cuánto debo llevar mi auto a mantención?</summary>
+        <p>Como referencia general, se recomienda una revisión cada 10.000 a 15.000 km o cada 6 meses, lo que ocurra primero. En tu diagnóstico te damos una recomendación específica según la marca, modelo y uso de tu vehículo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto demora una revisión de tren delantero o trasero?</summary>
+        <p>Depende de la falla. Un diagnóstico inicial suele tomar entre 30 y 60 minutos; la reparación completa (amortiguadores, bujes, rodamientos, etc.) se agenda según la disponibilidad de repuestos, y siempre te damos un plazo estimado antes de empezar.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Entregan garantía por el servicio automotriz realizado?</summary>
+        <p>Sí, todos nuestros trabajos incluyen garantía en repuestos y mano de obra. Los términos específicos se detallan en tu presupuesto antes de aceptar el servicio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Necesito agendar hora o puedo llegar directo?</summary>
+        <p>Recomendamos agendar por WhatsApp o el formulario de esta página para asegurar tu horario, aunque también recibimos vehículos según disponibilidad del taller.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad contact" id="contacto">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">RESERVA TU HORA</div>
+      <h2>Solicita tu diagnóstico</h2>
+      <p>Completa el formulario y te contactaremos a la brevedad, o escríbenos directo por WhatsApp.</p>
+    </div>
+
+    <div class="contact-shell">
+      <div class="contact-info" data-reveal="left">
+        <div class="eyebrow">CONTACTO DIRECTO</div>
+        <h3>Hablemos de tu vehículo</h3>
+        <p class="desc">Cuéntanos la marca, modelo y qué está fallando. Te orientamos sin costo antes de agendar la revisión.</p>
+
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6"/></svg>
+          <div><strong>Teléfono / WhatsApp</strong>+56 9 8414 9003</div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+          <div><strong>Dirección</strong>Diego Portales 1167, La Florida, Santiago</div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <strong>Horario de atención</strong>
+            <div class="hours-row"><span>Lunes a viernes</span><span>09:00 – 18:30</span></div>
+            <div class="hours-row"><span>Sábado</span><span>09:00 – 14:00</span></div>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Diego+Portales+1167,+La+Florida,+Santiago,+Chile&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de AcelPro en Diego Portales 1167, La Florida, Santiago">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-form" data-reveal="right">
+        <h3>Solicita tu cotización</h3>
+        <p class="sub">Completa tus datos y el detalle de tu vehículo. Es gratis y no tiene compromiso.</p>
+        <form id="quoteForm">
+          <div class="form-grid">
+            <div class="form-field full">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+            </div>
+            <div class="form-field">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+56 9 0000 0000" required>
+            </div>
+            <div class="form-field">
+              <label for="vehiculo">Marca / Modelo / Año</label>
+              <input type="text" id="vehiculo" name="vehiculo" placeholder="Ej: Toyota Hilux 2018" required>
+            </div>
+            <div class="form-field full">
+              <label for="servicio">Servicio requerido</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="Diésel">Motor diésel</option>
+                <option value="Gasolina">Motor gasolina</option>
+                <option value="Tren delantero">Tren delantero</option>
+                <option value="Tren trasero">Tren trasero</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="mensaje">Cuéntanos qué le pasa a tu auto</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Describe el síntoma, ruido o falla que notaste..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">
+            Enviar y solicitar cotización
+            <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">Al enviar, se abrirá WhatsApp con tus datos listos para confirmar el envío.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand footer-brand-logo" aria-label="AcelPro - Taller mecánico y servicio automotriz">
+          <img class="brand-icon" src="assets/acelpro-icon.png" alt="" loading="lazy" decoding="async" aria-hidden="true">
+          <span class="brand-text">ACEL<em>PRO</em><small>Mecánica automotriz</small></span>
+        </a>
+        <p>Taller mecánico especializado en motores diésel y gasolina, y en reparación de tren delantero y trasero. Diagnóstico computarizado y garantía en cada trabajo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#porque">Por qué elegirnos</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>+56 9 8414 9003</li>
+          <li>Diego Portales 1167, La Florida, Santiago</li>
+          <li>Lun–Vie 09:00–18:30 · Sáb 09:00–14:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AcelPro. Todos los derechos reservados.</span>
+      <span>Mecánica diésel · gasolina · tren delantero · tren trasero</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/56984149003?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20una%20revisi%C3%B3n%20para%20mi%20veh%C3%ADculo" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.5 6.3 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-2 0-3.9-.5-5.5-1.5l-.4-.2-4.6 1.1 1.2-4.4-.3-.4C5.3 17.7 4.7 16.4 4.7 15c0-6.2 5.1-11.3 11.3-11.3S27.3 8.8 27.3 15 22.2 24.8 16 24.8zm6.2-8.4c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
